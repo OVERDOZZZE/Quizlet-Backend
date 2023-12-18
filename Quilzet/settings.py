@@ -9,7 +9,7 @@ CORS_ORIGIN_ALLOW_ALL = True
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['.vercel.app','now.sh','127.0.0.1','localhost']
 
 
 INSTALLED_APPS = [
@@ -56,7 +56,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'Quilzet.wsgi.app'
+WSGI_APPLICATION = 'Quilzet.wsgi.application'
 
 
 DATABASES = {
