@@ -1,6 +1,6 @@
+from django.shortcuts import render
 from rest_framework import viewsets, generics
 from rest_framework.permissions import IsAuthenticated
-
 from .models import Card, Language, Module
 from .serializers import ModuleSerializer, LanguageSerializer, CardSerializer
 from .permissions import IsOwnerOrNone, IsOwnerOrReadOnly
@@ -50,3 +50,7 @@ class LanguageViewSet(viewsets.ModelViewSet):
     queryset = Language.objects.all()
     serializer_class = LanguageSerializer
     permission_classes = []
+
+
+def start(request):
+    return render(request, 'card/index.html')
