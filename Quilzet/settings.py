@@ -5,7 +5,7 @@ from decouple import config
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = config('SECRET_KEY')
-
+CORS_ORIGIN_ALLOW_ALL = True
 
 DEBUG = True
 
@@ -37,7 +37,6 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     "corsheaders.middleware.CorsMiddleware"
 ]
-CORS_ALLOWED_ORIGINS = ['*']
 
 ROOT_URLCONF = 'Quilzet.urls'
 
@@ -115,5 +114,5 @@ REST_FRAMEWORK = {
     ]
 }
 
-CORS_ORIGIN_ALLOW_ALL = True
+
 
