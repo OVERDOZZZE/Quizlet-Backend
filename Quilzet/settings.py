@@ -4,7 +4,7 @@ from decouple import config
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = config('SECRET_KEY')
+SECRET_KEY = 'django-insecure-6y)9^mnq=0hqs!)5sfuo-fgr@ent*fr#yi#!-5#t*x0i&$f(#*'
 # CORS_ORIGIN_ALLOW_ALL = True
 
 DEBUG = True
@@ -62,12 +62,12 @@ WSGI_APPLICATION = 'Quilzet.wsgi.app'
 
 DATABASES = {
     'default': {
-        'ENGINE': config('ENGINE'),
-        'NAME': config('NAME'),
-        'USER': config('USER'),
-        'PASSWORD': config('PASSWORD'),
-        'HOST': config('HOST'),
-        'PORT': config('PORT'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'railway',
+        'USER': 'postgres',
+        'PASSWORD': '-53gDa2ead6g*3DFe2C-1dcFbAegf2AB',
+        'HOST': 'monorail.proxy.rlwy.net',
+        'PORT': '52044',
     }
 }
 
