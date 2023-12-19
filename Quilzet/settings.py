@@ -25,6 +25,7 @@ INSTALLED_APPS = [
     "rest_framework.authtoken",
     "djoser",
     "corsheaders",
+    "drf_yasg",
 ]
 
 MIDDLEWARE = [
@@ -56,7 +57,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'Quilzet.wsgi.application'
+WSGI_APPLICATION = 'Quilzet.wsgi.app'
 
 
 DATABASES = {
